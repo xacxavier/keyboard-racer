@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/dad4b6879d.js" crossorigin="anonymous"></script>
+    <title>KeyBoard Racer</title>
+
+</head>
+
+<body>
+
+
+    <div id="settings" class="settings">
+        <form id="settings-selector">
+            <div>
+                <label for="difficulty">Difficulty</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2> <i class="fa-solid fa-keyboard flex-container"></i> KeyBoard Racer <i
+                class="fa-solid fa-person-running"></i></h2>
+        <small>Type the following:</small>
+        <h1 id="word"></h1>
+        <div class="flex-container">
+            <p class="time-container">Time left: <span id="time">10s</span></p>
+            <p class="score-container">Score: <span id="score">0</span></p>
+        </div>
+        <input type="text" id="text" autocomplete="off" placeholder="Type here..." />
+        <div id="end-game-container" class="end-game-container"></div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
